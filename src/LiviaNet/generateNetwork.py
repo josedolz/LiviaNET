@@ -141,7 +141,7 @@ def generateNetwork(configIniName) :
                                         myParserConfigIni.epsilon_RMSProp
                                         )
    
-    # ---------------  Compile the functions (Training/Validation/Testing) --------------- 
+    # ---------------  Compile the functions (Training/Testing) --------------- 
     myLiviaNet3D.compileTheanoFunctions()
 
     #  --------------- Save the model --------------- 
