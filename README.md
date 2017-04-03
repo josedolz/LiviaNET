@@ -6,7 +6,7 @@ This repository contains the code of LiviaNET, a 3D fully convolutional neural n
 
 - The code has been written in Python (2.7) and requires [Theano](http://deeplearning.net/software/theano/)
 - You should also have installed [scipy](https://www.scipy.org/)
-- The code allows to load images in Matlab and Nifti formats. If you wish to use nifti formats you should install [nibabel](http://nipy.org/nibabel/) 
+- (Optional) The code allows to load images in Matlab and Nifti formats. If you wish to use nifti formats you should install [nibabel](http://nipy.org/nibabel/) 
 
 ## Running the code
 
