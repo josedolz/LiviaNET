@@ -68,18 +68,11 @@ def dice(im1, im2):
     im2 : boolean array
     
     If they are not boolean, they will be converted.
-    Returns
+    
     -------
-    dice : float
-        Dice coefficient as a float on range [0,1].
-        Maximum similarity = 1
-        No similarity = 0
-        Both are empty (sum eq to zero) = empty_score
-        
-    Notes
-    -----
-    The order of inputs for `dice` is irrelevant. The result will be
-    identical if `im1` and `im2` are switched.
+    It returns the Dice coefficient as a float on the range [0,1].
+        1: Perfect overlapping 
+        0: Not overlapping 
     """
     im1 = np.asarray(im1).astype(np.bool)
     im2 = np.asarray(im2).astype(np.bool)
