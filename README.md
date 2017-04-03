@@ -52,7 +52,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
 - April,2th. 2017.
 
 
-If you use this code for your research, pleae cite the original paper:
+If you use this code for your research, please cite the original paper:
 
 - Dolz, J., C. Desrosiers, and I. Ben Ayed. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."](https://128.84.21.199/abs/1612.03925v1) arXiv preprint arXiv:1612.03925 (2016)
 
