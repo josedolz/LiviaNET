@@ -19,7 +19,7 @@ To start with your own architecture, you have to modify the file "LiviaNET_Confi
 Then you simply have to write in the command line:
 
 ```
-python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 0
+python ./networkTraining.py ./LiviaNET_Config.ini 0
 ```
 This will save, after each epoch, the updated trained model.
 
@@ -28,7 +28,7 @@ This will save, after each epoch, the updated trained model.
 Imagine that after two days of training your model, and just before you have your new model ready to be evaluated, your computer breaks down. Do not panic!!! You will have only to re-start the training from the last epoch in which the model was saved (Let's say epoch 20) as follows:
 
 ```
-python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch0
+python ./networkTraining.py ./LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch0
 ```
 
 ### Ok, cool. And what about employing pre-trained models?
@@ -44,7 +44,7 @@ For that you will have to specify in the "LiviaNET_Config.ini" file the folder w
 Once you are satisfied with your training, you can evaluate it by writing this in the command line:
 
 ```
-python ./networkSegmentation.py ./LiviaNet/LiviaNET_Segmentation.ini ./outputFiles/LiviaNet_Test/Networks/liviaTest_EpochX
+python ./networkSegmentation.py ./LiviaNET_Segmentation.ini ./outputFiles/LiviaNet_Test/Networks/liviaTest_EpochX
 ```
 where X denotes the last (or desired) epoch in which the model was saved.
 
