@@ -9,6 +9,9 @@ This repository contains the code of LiviaNET, a 3D fully convolutional neural n
 - The code allows to load images in Matlab and Nifti formats. If you wish to use nifti formats you should install [nibabel](http://nipy.org/nibabel/) 
 
 ## Running the code
+
+## Training
+
 ### How do I train my own architecture from scratch?
 
 To start with your own architecture, you have to modify the file "LiviaNET_Config.ini" according to your requirements.
@@ -18,6 +21,16 @@ Then you simply have to write in the command line:
 ```
 python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 0
 ```
+This will save, after each epoch, the updated trained model.
+
+### Can I re-start the training from another epoch?
+
+Imagine that after two days of training your model, and just before you have your new model ready to be evaluated, your computer breaks down. Do not panic!!! You will have only to re-start the training from the last epoch in which the model was saved (Let's say epoch 20) as follows:
+
+```
+python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch0
+```
+
 
 Current status: Cleaning and commenting files.....
 
