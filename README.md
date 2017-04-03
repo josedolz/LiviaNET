@@ -37,6 +37,17 @@ Yes, you can also do that. Instead of loading a whole model, which limits someho
 
 For that you will have to specify in the "LiviaNET_Config.ini" file the folder where the weights are saved ("weights folderName") and in which layers you want to use transfer learning ("weights trained indexes").
 
+## Testing
+
+### How can I use a trained model?
+
+Once you are satisfied with your training, you can evaluate it by writing this in the command line:
+
+```
+python ./networkSegmentation.py ./LiviaNet/LiviaNET_Segmentation.ini ./outputFiles/LiviaNet_Test/Networks/liviaTest_EpochX
+```
+where X denotes the last (or desired) epoch in which the model was saved.
+
 Current status: Cleaning and commenting files.....
 
 Expected date of release: 2017, April, 7th.
