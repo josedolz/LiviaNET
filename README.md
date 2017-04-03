@@ -1,15 +1,23 @@
-## LiviaNET. 3D fully Convolutional Neural Network for semantic image segmentation
+# LiviaNET. 3D fully Convolutional Neural Network for semantic image segmentation
 
 This repository contains the code of LiviaNET, a 3D fully convolutional neural network that was employed in our work: [3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study](https://128.84.21.199/abs/1612.03925v1) (In current revision at NeuroImage).
 
-### Requirements
+## Requirements
 
 - The code has been written in Python (2.7) and requires [Theano](http://deeplearning.net/software/theano/)
 - You should also have installed [scipy](https://www.scipy.org/)
 - The code allows to load images in Matlab and Nifti formats. If you wish to use nifti formats you should install [nibabel](http://nipy.org/nibabel/) 
 
-### Running the code
-## How do I train my own architecture from scratch?
+## Running the code
+### How do I train my own architecture from scratch?
+
+To start with your own architecture, you have to modify the file "LiviaNET_Config.ini" according to your requirements.
+
+Then you simply have to write in the command line:
+
+```
+python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 0
+```
 
 Current status: Cleaning and commenting files.....
 
@@ -24,6 +32,6 @@ If you are reading this is because I did not still finish to upload all the file
 
 If you use this code for your research, pleae cite the original paper:
 
-Dolz, J., C. Desrosiers, and I. Ben Ayed. "3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study." arXiv preprint arXiv:1612.03925 (2016).
+- Dolz, J., C. Desrosiers, and I. Ben Ayed. "3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study." arXiv preprint arXiv:1612.03925 (2016).
 
 I strongly encourage to cite the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. "Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation." Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
