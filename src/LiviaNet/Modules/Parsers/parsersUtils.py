@@ -73,6 +73,9 @@ class parserConfigIni(object):
       _self.activationType               = json.loads(ConfigIni.get('CNN_Architecture','activationType')) # Activation Typ
       _self.weight_Initialization_CNN    = json.loads(ConfigIni.get('CNN_Architecture','weight_Initialization_CNN')) # weight_Initialization (CNN)
       _self.weight_Initialization_FCN    = json.loads(ConfigIni.get('CNN_Architecture','weight_Initialization_FCN')) # weight_Initialization (FCN)
+      _self.weightsFolderName            = ConfigIni.get('CNN_Architecture','weights folderName') # weights folder
+      _self.weightsTrainedIdx            = json.loads(ConfigIni.get('CNN_Architecture','weights trained indexes')) # weights indexes to employ
+
       _self.batch_size                   = json.loads(ConfigIni.get('Training Parameters','batch_size')) # Batch size
       _self.sampleSize_Train             = json.loads(ConfigIni.get('Training Parameters','sampleSize_Train'))
       _self.sampleSize_Test              = json.loads(ConfigIni.get('Training Parameters','sampleSize_Test'))
@@ -116,8 +119,9 @@ class parserConfigIni(object):
       # training params
       _self.numberOfEpochs                    = json.loads(ConfigIni.get('Training Parameters','number of Epochs'))
       _self.numberOfSubEpochs                 = json.loads(ConfigIni.get('Training Parameters','number of SubEpochs'))
-      _self.numberOfSamplesPerSupEpoch_Train  = json.loads(ConfigIni.get('Training Parameters','number of samples at each SubEpoch Train'))
-      _self.learningRate_scheduleType         = json.loads(ConfigIni.get('Training Parameters','learning Rate schedule Type')) 
+      _self.numberOfSamplesSupEpoch           = json.loads(ConfigIni.get('Training Parameters','number of samples at each SubEpoch Train'))
+      _self.learningRate_scheduleType         = json.loads(ConfigIni.get('Training Parameters','learning Rate schedule Type'))
+      _self.applyPadding                      = json.loads(ConfigIni.get('Training Parameters','applyPadding'))  
 
    def readModelTesting_params(_self,fileName) :
       ConfigIni = ConfigParser.ConfigParser()
@@ -131,3 +135,4 @@ class parserConfigIni(object):
       _self.indexesToSegment  = json.loads(ConfigIni.get('Segmentation Images','indexesToSegment'))
       _self.applyPadding      = json.loads(ConfigIni.get('Segmentation Images','applyPadding'))
       
+
