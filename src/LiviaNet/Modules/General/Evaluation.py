@@ -60,15 +60,14 @@ def computeDice(autoSeg, groundTruth):
     return DiceArray
 
 
-def dice(im1, im2, empty_score=1.0):
+def dice(im1, im2):
     """
-    Computes the Dice coefficient, a measure of set similarity.
-    Parameters
+    Computes the Dice coefficient
     ----------
-    im1 : array-like, bool
-        Any array of arbitrary size. If not boolean, will be converted.
-    im2 : array-like, bool
-        Any other array of identical size. If not boolean, will be converted.
+    im1 : boolean array
+    im2 : boolean array
+    
+    If they are not boolean, they will be converted.
     Returns
     -------
     dice : float
@@ -85,14 +84,14 @@ def dice(im1, im2, empty_score=1.0):
     im1 = np.asarray(im1).astype(np.bool)
     im2 = np.asarray(im2).astype(np.bool)
 
-    if im1.shape != im2.shape:
-        raise ValueError("Shape mismatch: im1 and im2 must have the same shape.")
+    if im1.size != im2.size:
+        raise ValueError("Size mismatch between input arrays!!!")
 
     im_sum = im1.sum() + im2.sum()
     if im_sum == 0:
-        return empty_score
+        return 1.0
 
-    # Compute Dice coefficient
+    # Compute Dice 
     intersection = np.logical_and(im1, im2)
 
     return 2. * intersection.sum() / im_sum
