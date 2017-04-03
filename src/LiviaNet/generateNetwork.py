@@ -64,10 +64,10 @@ def generateNetwork(configIniName) :
     def LeakyReLU():
         print " --- Activation function: Leaky ReLU"
                   
-    printActivationFunction = {0 : ReLU,
-                               1 : PReLU,
-                               2 : LeakyReLU,
-                              -1 : Linear}
+    printActivationFunction = {0 : Linear,
+                               1 : ReLU,
+                               2 : PReLU,
+                               3 : LeakyReLU}
 
     printActivationFunction[myParserConfigIni.activationType]()
         
@@ -123,6 +123,8 @@ def generateNetwork(configIniName) :
                                myParserConfigIni.pooling_scales,
                                myParserConfigIni.weight_Initialization_CNN,
                                myParserConfigIni.weight_Initialization_FCN,
+                               myParserConfigIni.weightsFolderName,
+                               myParserConfigIni.weightsTrainedIdx,
                                myParserConfigIni.tempSoftMax
                                )
                                # TODO: Specify also the weights if pre-trained
@@ -141,7 +143,7 @@ def generateNetwork(configIniName) :
                                         myParserConfigIni.epsilon_RMSProp
                                         )
    
-    # ---------------  Compile the functions (Training/Testing) --------------- 
+    # ---------------  Compile the functions (Training/Validation/Testing) --------------- 
     myLiviaNet3D.compileTheanoFunctions()
 
     #  --------------- Save the model --------------- 
@@ -169,4 +171,5 @@ def generateNetwork(configIniName) :
     print  strFinal
     
     return modelFileName
+   
    
