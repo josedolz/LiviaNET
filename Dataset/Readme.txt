@@ -13,3 +13,12 @@ The best way to create your dataset to be loaded in this work, is as follows:
 |
 |____ Label/
 |     |___ Corresponding labels (Be aware that they should be in the same order than images in previous folder)
+|            |__ GT_0
+|            |__ GT_1
+|            |__ etc...
+|
+|____ ROI/
+|     |___ If you use masks to prone the region of interest, they should be here
+|            |__ ROI_0
+|            |__ ROI_1
+|            |__ etc...
