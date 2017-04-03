@@ -31,6 +31,11 @@ Imagine that after two days of training your model, and just before you have you
 python ./networkTraining.py ./LiviaNet/LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch0
 ```
 
+### Ok, cool. And what about employing pre-trained models?
+
+Yes, you can also do that. Instead of loading a whole model, which limits somehow the usability of loading pre-trained models, this code allows to load weights for each layer independently. 
+
+For that you will have to specify in the "LiviaNET_Config.ini" file the folder where the weights are saved ("weights folderName") and in which layers you want to use transfer learning ("weights trained indexes").
 
 Current status: Cleaning and commenting files.....
 
