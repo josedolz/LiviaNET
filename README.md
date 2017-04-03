@@ -50,6 +50,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - April,2th. 2017.
+-- Features:
 
 
 If you use this code for your research, please cite the original paper:
