@@ -52,7 +52,7 @@ def computeDice(autoSeg, groundTruth):
         gtArray = np.zeros(autoSeg.size,dtype=np.bool)
         gtArray[idx_GT] = 1
         
-        dsc = dice(autoArray, gtArray, empty_score=1.0)
+        dsc = dice(autoArray, gtArray)
 
         #dice = np.sum(autoSeg[groundTruth==c_i])*2.0 / (np.sum(autoSeg) + np.sum(groundTruth))
         DiceArray.append(dsc)
