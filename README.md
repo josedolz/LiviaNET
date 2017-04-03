@@ -51,18 +51,17 @@ where X denotes the last (or desired) epoch in which the model was saved.
 ### Versions
 - April,2th. 2017.
  * Features:
-  *  
+  * Several activation functions supported.
+  * Stochastic gradient descent and RmsProp optimizers.
+  * Matlab and Nifti format supported.
+  * Loading of pre-trained weights at different layers.
 
 
-If you use this code for your research, please cite the original paper:
+If you use this code for your research, please consider citing the original paper:
 
 - Dolz, J., C. Desrosiers, and I. Ben Ayed. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."](https://128.84.21.199/abs/1612.03925v1) arXiv preprint arXiv:1612.03925 (2016)
 
-I strongly encourage to cite the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
+I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
 
 
-Current status: Cleaning and commenting files.....
 
-Expected date of release: 2017, April, 7th.
-
-If you are reading this is because I did not still finish to upload all the files. Therefore, the code is incomplete!
