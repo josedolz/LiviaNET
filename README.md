@@ -21,7 +21,10 @@ Then you simply have to write in the command line:
 ```
 python ./networkTraining.py ./LiviaNET_Config.ini 0
 ```
+
 This will save, after each epoch, the updated trained model.
+
+If you use GPU, after nearly 5 minutes you will have your trained model from the example.
 
 ### Can I re-start the training from another epoch?
 
@@ -53,7 +56,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
   * Features:
     * Several activation functions supported.
     * Stochastic gradient descent and RmsProp optimizers.
-    * Images in Matlab^1^ and Nifti format supported.
+    * Images in Matlab and Nifti format supported. (To use matlab files, every image should be saved as 'vol').
     * Loading of pre-trained weights at different layers.
 
 
@@ -63,5 +66,6 @@ If you use this code for your research, please consider citing the original pape
 
 I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
 
-
+### Known problems
+#
 
