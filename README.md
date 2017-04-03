@@ -53,7 +53,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
   * Features:
     * Several activation functions supported.
     * Stochastic gradient descent and RmsProp optimizers.
-    * Matlab and Nifti format supported.
+    * Images in Matlab^1 and Nifti format supported.
     * Loading of pre-trained weights at different layers.
 
 
