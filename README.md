@@ -50,11 +50,11 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - April,2th. 2017.
- * Features:
-  * Several activation functions supported.
-  * Stochastic gradient descent and RmsProp optimizers.
-  * Matlab and Nifti format supported.
-  * Loading of pre-trained weights at different layers.
+  * Features:
+    * Several activation functions supported.
+    * Stochastic gradient descent and RmsProp optimizers.
+    * Matlab and Nifti format supported.
+    * Loading of pre-trained weights at different layers.
 
 
 If you use this code for your research, please consider citing the original paper:
