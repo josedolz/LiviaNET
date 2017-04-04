@@ -103,7 +103,9 @@ def startTraining(networkModelName,configIniName):
         applyPadding = True
     else:
         applyPadding = False
-        
+    
+    learningRateModifiedEpoch = 0
+    
     # Run over all the (remaining) epochs and subepochs
     for e_i in xrange(numberOfEpochs):
         # Recover last trained epoch
@@ -169,7 +171,17 @@ def startTraining(networkModelName,configIniName):
         print(" ---------- Training on Epoch #" + str(e_i) + " finished ----------" )
         print(" ---------- Cost of Epoch: {} / Mean training error {}".format(meanCostOfEpoch,currentMeanCost))
         print(" -------------------------------------------------------- " )
+        
+        # ------------- Update Learning Rate if required ----------------#
 
+        if e_i > myLiviaNet3D.firstEpochChangeLR :
+            if e_i == (learningRateModifiedEpoch + myLiviaNet3D.frequencyChangeLR):
+                currentLR = myLiviaNet3D.learning_rate.get_value()
+                newLR = currentLR / 2.0
+                myLiviaNet3D.learning_rate.set_value(newLR)
+                print(" ... Learning rate has been changed from {} to {}".format(currentLR, newLR))
+                learningRateModifiedEpoch = e_i
+                
         # ---------------------- Start validation ---------------------- #
         
         numberImagesToSegment = len(imageNames_Val)
