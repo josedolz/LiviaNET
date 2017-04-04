@@ -31,7 +31,7 @@ If you use GPU, after nearly 5 minutes you will have your trained model from the
 Imagine that after two days of training your model, and just before you have your new model ready to be evaluated, your computer breaks down. Do not panic!!! You will have only to re-start the training from the last epoch in which the model was saved (Let's say epoch 20) as follows:
 
 ```
-python ./networkTraining.py ./LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch0
+python ./networkTraining.py ./LiviaNET_Config.ini 1 ./outputFiles/LiviaNet_Test/Networks/liviaTest_Epoch20
 ```
 
 ### Ok, cool. And what about employing pre-trained models?
