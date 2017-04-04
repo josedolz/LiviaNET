@@ -87,7 +87,7 @@ def applyActivationFunction_ReLU_v3(inputData):
     return ((inputData + abs(inputData))/2.0)
     
 # --- Version 4 ---
-def applyActivationFunction_ReLU_v3(inputData):
+def applyActivationFunction_ReLU_v4(inputData):
     
     return (T.sgn(inputData) + 1) * inputData * 0.5    
 
@@ -151,7 +151,7 @@ def applyActivationFunction_PReLU_v2(inputData,PreluActivations) :
     return ( output)
 
 # --- version 3 ---
-def applyActivationFunction_PReLU_v2(inputData,PreluActivations) :
+def applyActivationFunction_PReLU_v3(inputData,PreluActivations) :
     """ inputData is a tensor5D with shape:
      (batchSize,
      Number of feature Maps,
