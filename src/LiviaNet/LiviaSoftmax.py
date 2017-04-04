@@ -46,12 +46,12 @@ class LiviaSoftmax(LiviaNet3DConvLayer):
                  inputToLayerShapeTrain,
                  inputToLayerShapeTest,
                  filterShape,
-                 useBnFlag, 
-                 rollingAverageForBatchNormalizationOverThatManyBatches, 
+                 applyBatchNorm, 
+                 applyBatchNormNumberEpochs, 
                  maxPoolingParameters,
-                 initializationTechniqueClassic0orDelvingInto1,
+                 weights_initialization,
                  weights,
-                 activationFunctionToUseRelu0orPrelu1orMinus1ForLinear=0,
+                 activationType=0,
                  dropoutRate=0.0,
                  softmaxTemperature = 1.0) :
 
@@ -63,12 +63,12 @@ class LiviaSoftmax(LiviaNet3DConvLayer):
                                      inputToLayerShapeTrain,
                                      inputToLayerShapeTest,
                                      filterShape,
-                                     useBnFlag, 
-                                     rollingAverageForBatchNormalizationOverThatManyBatches, 
+                                     applyBatchNorm, 
+                                     applyBatchNormNumberEpochs, 
                                      maxPoolingParameters,
-                                     initializationTechniqueClassic0orDelvingInto1,
+                                     weights_initialization,
                                      weights,
-                                     activationFunctionToUseRelu0orPrelu1orMinus1ForLinear,
+                                     activationType,
                                      dropoutRate)
         
         self._numberOfOutputClasses = None
@@ -76,7 +76,6 @@ class LiviaSoftmax(LiviaNet3DConvLayer):
         self._softmaxTemperature = None
         
         self._numberOfOutputClasses = filterShape[0]
-        assert self._numberOfOutputClasses == self._numberOfFeatureMaps
         self._softmaxTemperature = softmaxTemperature
 
         # Define outputs
