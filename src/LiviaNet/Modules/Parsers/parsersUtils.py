@@ -120,7 +120,7 @@ class parserConfigIni(object):
       _self.numberOfEpochs                    = json.loads(ConfigIni.get('Training Parameters','number of Epochs'))
       _self.numberOfSubEpochs                 = json.loads(ConfigIni.get('Training Parameters','number of SubEpochs'))
       _self.numberOfSamplesSupEpoch           = json.loads(ConfigIni.get('Training Parameters','number of samples at each SubEpoch Train'))
-      _self.learningRate_scheduleType         = json.loads(ConfigIni.get('Training Parameters','learning Rate schedule Type'))
+      _self.learningRate_scheduleType         = json.loads(ConfigIni.get('Training Parameters','learning Rate change Type'))
       _self.applyPadding                      = json.loads(ConfigIni.get('Training Parameters','applyPadding'))  
 
    def readModelTesting_params(_self,fileName) :
