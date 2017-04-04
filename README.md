@@ -58,6 +58,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
     * Stochastic gradient descent and RmsProp optimizers.
     * Images in Matlab and Nifti format supported. (To use matlab files, every image should be saved as 'vol').
     * Loading of pre-trained weights at different layers.
+    * Connection of intermediate conv layers to the first fully connected layers (i.e. multi-scale fetures).
 
 
 If you use this code for your research, please consider citing the original paper:
