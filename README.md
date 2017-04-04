@@ -52,7 +52,7 @@ python ./networkSegmentation.py ./LiviaNET_Segmentation.ini ./outputFiles/LiviaN
 where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
-- April,2th. 2017.
+- Version 1.0. April,2th. 2017.
   * Features:
     * Several activation functions supported.
     * Stochastic gradient descent and RmsProp optimizers.
