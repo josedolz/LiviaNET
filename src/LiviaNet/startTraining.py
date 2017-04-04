@@ -85,6 +85,8 @@ def startTraining(networkModelName,configIniName):
     myLiviaNet3D.numberOfEpochs = myParserConfigIni.numberOfEpochs
     myLiviaNet3D.numberOfSubEpochs = myParserConfigIni.numberOfSubEpochs
     myLiviaNet3D.numberOfSamplesSupEpoch  = myParserConfigIni.numberOfSamplesSupEpoch
+    myLiviaNet3D.firstEpochChangeLR  = myParserConfigIni.firstEpochChangeLR
+    myLiviaNet3D.frequencyChangeLR  = myParserConfigIni.frequencyChangeLR
     
     numberOfEpochs = myLiviaNet3D.numberOfEpochs
     numberOfSubEpochs = myLiviaNet3D.numberOfSubEpochs
