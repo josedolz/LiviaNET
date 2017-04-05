@@ -21,7 +21,7 @@ are permitted provided that the following conditions are met:
 
 Jose Dolz. Dec, 2016.
 email: jose.dolz.upv@gmail.com
-LIVA Department, ETS, Montreal.
+LIVIA Department, ETS, Montreal.
 """
 
 from loadData import load_imagesSinglePatient
