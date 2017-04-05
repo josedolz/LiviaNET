@@ -27,7 +27,7 @@ NOTES: There are still some functionalities to be implemented.
 
 Jose Dolz. Dec, 2016.
 email: jose.dolz.upv@gmail.com
-LIVA Department, ETS, Montreal.
+LIVIA Department, ETS, Montreal.
 """
 
 import numpy
