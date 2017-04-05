@@ -10,7 +10,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 Jose Dolz. Dec, 2016.
 email: jose.dolz.upv@gmail.com
-LIVA Department, ETS, Montreal.
+LIVIA Department, ETS, Montreal.
 """
 
 import os
