@@ -73,3 +73,5 @@ I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantino
 ```
 THEANO_FLAGS='floatX=float32' python ./networkTraining.py ./LiviaNET_Config.ini 0
 ```
+
+You can contact me at: jose.dolz.upv@gmail.com
