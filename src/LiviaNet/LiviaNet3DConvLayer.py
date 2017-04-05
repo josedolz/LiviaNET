@@ -62,21 +62,15 @@ class LiviaNet3DConvLayer(object):
                  weights,
                  activationType,
                  dropoutRate=0.0) :
-
-        # === Input to the layer ===
+        
         self.inputTrain = None
         self.inputTest = None
         self.inputShapeTrain = None
         self.inputShapeTest = None
-        
-        # === Basic architecture parameters === 
-        self._numberOfFeatureMaps = None
+       
+        self._numberOfFeatureMaps = 0
         self._maxPoolingParameters = None
-        
-        #=== All Trainable Parameters of the Block ===
         self._appliedBnInLayer = None
-        
-        # All trainable parameters
         self.params = [] 
         self.W = None 
         self._gBn = None 
@@ -93,14 +87,12 @@ class LiviaNet3DConvLayer(object):
         self._newMu_B = None
         self._newVar_B = None
         
-        
-        # === Output of the block ===
         self.outputTrain = None
         self.outputTest = None
         self.outputShapeTrain = None
         self.outputShapeTest = None
 
-        # === After all the parameters has been initialized, create the layer === #
+        # === After all the parameters has been initialized, create the layer 
         # Set all the inputs and parameters
         self.inputTrain = inputSample_Train
         self.inputTest = inputSample_Test
