@@ -139,7 +139,7 @@ def load_imagesSinglePatient(imageIdx,
         if applyPaddingBool == True : 
             [roiMask, paddingValues] = applyPadding(roiMask, sampleSizes, receptiveField)
     else :
-        roiMask = np.empty(0)
+        roiMask = np.ones(imageGtLabels.shape)
 
     return [imageData, imageGtLabels, roiMask, paddingValues]
 
