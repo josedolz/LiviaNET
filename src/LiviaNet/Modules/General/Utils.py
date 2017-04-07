@@ -204,14 +204,15 @@ def getImagesSet(imagesFolder, imageIndexes) :
    
    # Remove corrupted files (if any)
    if '.DS_Store' in imageNames: imageNames.remove('.DS_Store')
- 
-   imageNamesToGetWithFullPath = [join(imagesFolder,imageNames[imageIndexes[i]]) for i in range(0,len(imageIndexes))]
-   imageNamesToGet = [imageNames[imageIndexes[i]] for i in range(0,len(imageIndexes))]
-   #for i in range(0,len(imageNamesToGet)):
-      #print ("Image {} : {}".format(i,imageNamesToGet[i]))
+
+   imageNamesToGetWithFullPath = []
+   imageNamesToGet = []
+  
+   if ( len(imageNames) > 0):  
+       imageNamesToGetWithFullPath = [join(imagesFolder,imageNames[imageIndexes[i]]) for i in range(0,len(imageIndexes))]
+       imageNamesToGet = [imageNames[imageIndexes[i]] for i in range(0,len(imageIndexes))]
 
    return (imageNamesToGetWithFullPath,imageNamesToGet)
-
 
 
 """" Get a set of weights from a folder given an array of indexes """
