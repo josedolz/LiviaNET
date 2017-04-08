@@ -66,7 +66,7 @@ def startTraining(networkModelName,configIniName):
     (roiNames_Val, roi_names_Val)        = getImagesSet(myParserConfigIni.ROIFolder,myParserConfigIni.indexesForValidation) # ROI
 
     # Print names
-     print " ================== Images for training ================"
+    print " ================== Images for training ================"
     for i in range(0,len(names_Train)):
        if len(roi_names_Train) > 0:
             print(" Image({}): {}  |  GT: {}  |  ROI {} ".format(i,names_Train[i], gt_names_Train[i], roi_names_Train[i] ))
