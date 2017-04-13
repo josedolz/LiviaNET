@@ -151,7 +151,7 @@ def getSamplesSubject(imageIdx,
         roiMaxz = imgDim[2] - halfSampleDim[2][1]
 
         # Set
-        roiToApply[roiMinx:roiMaxx,roiMinx:roiMaxx,roiMinx:roiMaxx] = 1
+        roiToApply[roiMinx:roiMaxx,roiMiny:roiMaxy,roiMinz:roiMaxz] = 1
         
         maskCoords = weightMap * roiToApply
         
