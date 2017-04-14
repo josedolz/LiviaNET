@@ -213,7 +213,7 @@ def segmentVolume(myNetworkModel,
                                  imageTypeToSave)
             else:
                 # Cast to float32 for saving purposes
-                saveImageAsMatlab(segmentationRes.astype('float32'),
+                saveImageAsMatlab(probMapClassRes.astype('float32'),
                                   nameToSave)
 
         # If segmentation done during evaluation, get dice
