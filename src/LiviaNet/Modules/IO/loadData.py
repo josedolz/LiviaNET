@@ -26,6 +26,7 @@ LIVIA Department, ETS, Montreal.
 
 import numpy as np
 import pdb
+# If you are not using nifti files you can comment this line
 import nibabel as nib
 import scipy.io as sio
 
