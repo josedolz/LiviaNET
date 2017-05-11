@@ -53,7 +53,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - Version 1.0. 
-- April,2th. 2017.
+* April,2th. 2017.
   * Features:
     * Several activation functions supported.
     * Stochastic gradient descent and RmsProp optimizers.
