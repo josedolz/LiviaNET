@@ -53,14 +53,14 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - Version 1.0. 
-* April,2th. 2017.
-  * Features:
-    * Several activation functions supported.
-    * Stochastic gradient descent and RmsProp optimizers.
-    * Images in Matlab and Nifti format supported. 
-    * Loading of pre-trained weights at different layers.
-    * Connection of intermediate conv layers to the first fully connected layers (i.e. multi-scale fetures).
-    * Frequency of changes on learning rate customizable.
+  * April,2th. 2017.
+    * Features:
+      * Several activation functions supported.
+      * Stochastic gradient descent and RmsProp optimizers.
+      * Images in Matlab and Nifti format supported. 
+      * Loading of pre-trained weights at different layers.
+      * Connection of intermediate conv layers to the first fully connected layers (i.e. multi-scale fetures).
+      * Frequency of changes on learning rate customizable.
 
 
 If you use this code for your research, please consider citing the original paper:
