@@ -53,6 +53,9 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - Version 1.0. 
+  * May,10th. 2017
+    * Feature added:
+      * Functionality to process your labels for training (See important notes).
   * April,2th. 2017.
     * Features:
       * Several activation functions supported.
@@ -68,6 +71,15 @@ If you use this code for your research, please consider citing the original pape
 - Dolz J, Desrosiers C, Ben Ayed I. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."](https://128.84.21.199/abs/1612.03925v1) arXiv preprint arXiv:1612.03925 (2016)
 
 I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
+
+### Important notes
+* In order to correctly run the training, the convnet needs that training labels are provided in a consecutive manner. This means that the first class must be label 0, the second class labe 1, and so on. To ease this process I have included a script that takes all the images contained in one folder and automatically corrects labels to 0,1,2,etc. To do this, you should proceed as follows:
+
+```
+python processLabels.py ~yourpath/Training/LabelsNonCorrected ~yourpath/Training/LabelsCorrected 9 0
+
+```
+where 9 is the number of expected classes and 0 is the format (nifti in this case).
 
 ### Known problems
 * In some computers I tried, when running in CPU, it complains about the type of some tensors. The work-around I have found is just to set some theano flags at the beginning of the scripts. Something like:
