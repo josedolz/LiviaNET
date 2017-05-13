@@ -68,7 +68,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 If you use this code for your research, please consider citing the original paper:
 
-- Dolz J, Desrosiers C, Ben Ayed I. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."] NeuroImage (2017).
+- Dolz J, Desrosiers C, Ben Ayed I. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."](http://www.sciencedirect.com/science/article/pii/S1053811917303324) NeuroImage (2017).
 
 I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
 
