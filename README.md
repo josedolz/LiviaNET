@@ -73,7 +73,7 @@ If you use this code for your research, please consider citing the original pape
 I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
 
 ### Important notes
-* In order to correctly run the training, the convnet needs that training labels are provided in a consecutive manner. This means that the first class must be label 0, the second class labe 1, and so on. To ease this process I have included a script that takes all the images contained in one folder and automatically corrects labels to 0,1,2,etc. To do this, you should proceed as follows:
+* In order to correctly run the training, the convnet needs that training labels are provided in a consecutive manner. This means that the first class must be label 0, the second class label 1, and so on. To ease this process I have included a functionality that takes all the images contained in a given folder and automatically corrects labels to be 0,1,2,etc. To do this, you should proceed as follows:
 
 ```
 python processLabels.py ~yourpath/Training/LabelsNonCorrected ~yourpath/Training/LabelsCorrected 9 0
