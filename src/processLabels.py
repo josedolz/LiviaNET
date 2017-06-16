@@ -92,7 +92,7 @@ def checkAnotatedLabels(argv):
             print(" WARNING!!!!! Number of expected clases ({}) is different to found labels ({}) ".format(numClasses,len(labelsOrig)))
 
         # Correct labels
-        labelCorrectedImage = np.zeros(imageData.shape)
+        labelCorrectedImage = np.zeros(imageData.shape,dtype=np.int8)
         for i_l in xrange(0,len(labelsOrig)):
             idx = np.where(imageData == labelsOrig[i_l])
             labelCorrectedImage[idx] = i_l
