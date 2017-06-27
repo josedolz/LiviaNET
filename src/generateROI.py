@@ -84,6 +84,7 @@ def checkAnotatedLabels(argv):
              imageData = load_matlab(imageFileName, printFileNames)
 
         # Find voxels different to 0
+        # NOTE: I assume voxels equal to 0 are outside my ROI (like in the skull stripped datasets)
         idx = np.where(imageData > 0 )
 
         # Create ROI and assign those indexes to 1
