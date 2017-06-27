@@ -1,5 +1,5 @@
 """ 
-Copyright (c) 2016, Jose Dolz .All rights reserved.
+Copyright (c) 2017, Jose Dolz .All rights reserved.
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
     1. Redistributions of source code must retain the above copyright notice,
@@ -15,7 +15,7 @@ are permitted provided that the following conditions are met:
     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
     OTHER DEALINGS IN THE SOFTWARE.
-Jose Dolz. Dec, 2016.
+Jose Dolz. Dec, 2017.
 email: jose.dolz.upv@gmail.com
 LIVIA Department, ETS, Montreal.
 """
