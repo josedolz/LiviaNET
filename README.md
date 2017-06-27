@@ -53,6 +53,9 @@ where X denotes the last (or desired) epoch in which the model was saved.
 
 ### Versions
 - Version 1.0. 
+  * June,27th. 2017
+    * Feature added:
+      * Function to generate the ROI given the images to segment.
   * May,10th. 2017
     * Feature added:
       * Functionality to process your labels for training (See important notes).
