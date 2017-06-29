@@ -84,7 +84,8 @@ def checkAnotatedLabels(argv):
             imageFileName = imagesFolder + '/' + imageNames[i_d]
             [imageData,img_proxy] = load_nii(imageFileName, printFileNames)
         else:
-             imageData = load_matlab(imageFileName, printFileNames)
+            imageFileName = imagesFolder + '/' + imageNames[i_d]
+            imageData = load_matlab(imageFileName, printFileNames)
 
         labelsOrig = np.unique(imageData)
 
