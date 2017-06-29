@@ -81,7 +81,8 @@ def checkAnotatedLabels(argv):
             imageFileName = imagesFolder + '/' + imageNames[i_d]
             [imageData,img_proxy] = load_nii(imageFileName, printFileNames)
         else:
-             imageData = load_matlab(imageFileName, printFileNames)
+            imageFileName = imagesFolder + '/' + imageNames[i_d]
+            imageData = load_matlab(imageFileName, printFileNames)
 
         # Find voxels different to 0
         # NOTE: I assume voxels equal to 0 are outside my ROI (like in the skull stripped datasets)
