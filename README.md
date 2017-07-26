@@ -86,7 +86,7 @@ where 9 is the number of expected classes and 0 is the format (nifti in this cas
 
 ## Some results from our paper
 <br>
-<img src=" LiviaNET/Images/NeuroFeatMaps.jpg" />
+<img src="https://github.com/josedolz/LiviaNET/Images/NeuroFeatMaps.jpg" />
 <br>
 ### Known problems
 * In some computers I tried, when running in CPU, it complains about the type of some tensors. The work-around I have found is just to set some theano flags at the beginning of the scripts. Something like:
