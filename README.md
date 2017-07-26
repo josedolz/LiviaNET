@@ -85,8 +85,20 @@ python processLabels.py ~yourpath/Training/LabelsNonCorrected ~yourpath/Training
 where 9 is the number of expected classes and 0 is the format (nifti in this case).
 
 ## Some results from our paper
+
+#### Different views of a smoothed version of contours provided by our automatic segmentation system. In these images, the thalamus, caudate, putamen and pallidum are respectively depicted in yellow, cyan, red and green.
+
+<br>
+<img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroRes.jpg" />
+<br>
+
 <br>
 <img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroFeatMaps.jpg" />
+<br>
+
+
+<br>
+<img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroRes2.jpg" />
 <br>
 ### Known problems
 * In some computers I tried, when running in CPU, it complains about the type of some tensors. The work-around I have found is just to set some theano flags at the beginning of the scripts. Something like:
