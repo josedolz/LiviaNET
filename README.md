@@ -89,17 +89,16 @@ where 9 is the number of expected classes and 0 is the format (nifti in this cas
 #### Different views of a smoothed version of contours provided by our automatic segmentation system. In these images, the thalamus, caudate, putamen and pallidum are respectively depicted in yellow, cyan, red and green.
 
 <br>
-<img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroRes.jpg" />
+<img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroRes2.jpg" />
 <br>
 
+#### Feature map activations in all convolutional layers of the FCNN (right), obtained for a given patch of the input MRI image (left). Each column corresponds to a different convolutional layer, from shallow to deeper, and each image in a row to a features map activation randomly selected in the layer.
 <br>
 <img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroFeatMaps.jpg" />
 <br>
 
 
-<br>
-<img src="https://github.com/josedolz/LiviaNET/blob/master/Images/NeuroRes2.jpg" />
-<br>
+
 ### Known problems
 * In some computers I tried, when running in CPU, it complains about the type of some tensors. The work-around I have found is just to set some theano flags at the beginning of the scripts. Something like:
 
