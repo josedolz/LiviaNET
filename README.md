@@ -67,6 +67,7 @@ where X denotes the last (or desired) epoch in which the model was saved.
       * Loading of pre-trained weights at different layers.
       * Connection of intermediate conv layers to the first fully connected layers (i.e. multi-scale fetures).
       * Frequency of changes on learning rate customizable.
+      * Note. This version includes Batch Normalization, which was not used in the Neuroimage paper.
 
 
 If you use this code for your research, please consider citing the original paper:
