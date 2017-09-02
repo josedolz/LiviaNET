@@ -152,7 +152,7 @@ class LiviaNet3D(object):
         ######### -------------- Generate the convolutional layers --------------   #########
         # Some checks
         if self.weight_Initialization_CNN == 2:
-            if len(weightsTrainedIdx) <> len(numberCNNLayers):
+            if len(self.weightsTrainedIdx) <> numberCNNLayers:
                 print(" ... WARNING!!!! Number of indexes specified for trained layers does not correspond with number of conv layers in the created architecture...")
 
         if self.weight_Initialization_CNN == 2:
