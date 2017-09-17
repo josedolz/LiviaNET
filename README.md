@@ -108,3 +108,6 @@ THEANO_FLAGS='floatX=float32' python ./networkTraining.py ./LiviaNET_Config.ini 
 ```
 
 You can contact me at: jose.dolz.upv@gmail.com
+
+* A version of the network in Keras has been implemented in: "joseabernal/iSEG2017"](https://github.com/joseabernal/iSeg2017-nic_vicorob)
+
