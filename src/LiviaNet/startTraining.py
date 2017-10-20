@@ -180,13 +180,20 @@ def startTraining(networkModelName,configIniName):
         
         # ------------- Update Learning Rate if required ----------------#
 
-        if e_i > myLiviaNet3D.firstEpochChangeLR :
-            if e_i == (learningRateModifiedEpoch + myLiviaNet3D.frequencyChangeLR):
+        if e_i >= myLiviaNet3D.firstEpochChangeLR :
+            if learningRateModifiedEpoch == 0:
                 currentLR = myLiviaNet3D.learning_rate.get_value()
                 newLR = currentLR / 2.0
                 myLiviaNet3D.learning_rate.set_value(newLR)
                 print(" ... Learning rate has been changed from {} to {}".format(currentLR, newLR))
                 learningRateModifiedEpoch = e_i
+            else:
+                if (e_i) == (learningRateModifiedEpoch + myLiviaNet3D.frequencyChangeLR):
+                    currentLR = myLiviaNet3D.learning_rate.get_value()
+                    newLR = currentLR / 2.0
+                    myLiviaNet3D.learning_rate.set_value(newLR)
+                    print(" ... Learning rate has been changed from {} to {}".format(currentLR, newLR))
+                    learningRateModifiedEpoch = e_i
                 
         # ---------------------- Start validation ---------------------- #
         
