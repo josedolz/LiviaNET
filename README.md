@@ -110,7 +110,7 @@ THEANO_FLAGS='floatX=float32' python ./networkTraining.py ./LiviaNET_Config.ini 
 You can contact me at: jose.dolz.upv@gmail.com
 
 
-### Info:
+### ![#f03c15] Other implementations:
 - * A version of the network in Keras has been implemented in: "joseabernal/iSEG2017"(https://github.com/joseabernal/iSeg2017-nic_vicorob)
 - * Another Keras version of this network can be found in : "Deep Gray Matter (DGM) Segmentation using 3D Convolutional Neural Network: application to QSM"(https://github.com/zl376/segDGM_CNN)
 
