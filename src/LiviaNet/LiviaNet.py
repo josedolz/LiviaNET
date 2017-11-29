@@ -239,7 +239,8 @@ class LiviaNet3D(object):
             applyBatchNorm = True
             epochsToApplyBatchNorm = 60
             maxPoolingParameters = []
-            dropoutRate = 0.0
+            dropoutRate = self.dropout_Rates[l_i-numberCNNLayers]
+            
             myLiviaNet3DFullyConnectedLayer = LiviaNet3DConvLayer.LiviaNet3DConvLayer(rng,
                                                                             l_i,
                                                                             inputToFullyCN_Train,
@@ -294,7 +295,7 @@ class LiviaNet3D(object):
         applyBatchNorm = True
         epochsToApplyBatchNorm = 60
         maxPoolingParameters = []
-        dropoutRate = 0.5
+        dropoutRate = self.dropout_Rates[len(self.dropout_Rates)-1]
         softmaxTemperature = 1.0
                                                                               
         myLiviaNet_ClassificationLayer = LiviaSoftmax.LiviaSoftmax(rng,
