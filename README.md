@@ -74,7 +74,7 @@ If you use this code for your research, please consider citing the original pape
 
 - Dolz J, Desrosiers C, Ben Ayed I. "[3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study."](http://www.sciencedirect.com/science/article/pii/S1053811917303324) NeuroImage (2017).
 
-I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work.
+I strongly encourage to cite also the work of Kamnitsas :"Kamnitsas, Konstantinos, et al. ["Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation."](http://www.sciencedirect.com/science/article/pii/S1361841516301839) Medical Image Analysis 36 (2017): 61-78.", since this code is based on his previous work, DeepMedic.
 
 ### Important notes
 * In order to correctly run the training, the convnet needs that training labels are provided in a consecutive manner. This means that the first class must be label 0, the second class label 1, and so on. To ease this process I have included a functionality that takes all the images contained in a given folder and automatically corrects labels to be 0,1,2,etc. To do this, you should proceed as follows:
